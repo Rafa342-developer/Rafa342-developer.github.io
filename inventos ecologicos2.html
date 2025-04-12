@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech: Innovaciones para un Mundo Sostenible</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #297729;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+        }
+
+        header h1 {
+            font-size: 1.9em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+       nav {
+            background-color: #333;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 17px;
+            font-size: 16px;
+        }
+
+        .container {
+            margin-top: 2px;
+        }
+
+
+        section {
+            background-color: white;
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0;
+          font-family: Arial, sans-serif;
+          margin: 20px 0;
+          background-color: #ffffff;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+
+        th, td {
+          border: 1px solid #ccc;
+          padding: 16px 20px;
+          text-align: left;
+        }
+
+        th {
+          background-color: #33992D;
+          color: white;
+          font-size: 20px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+
+        td strong {
+          color: #2e7d32;
+        }
+
+        tr:hover {
+          background-color: #eefbee;
+        }
+
+        /* Esquinas redondeadas solo en las esquinas de la tabla */
+        table tr:first-child th:first-child {
+          border-top-left-radius: 10px;
+        }
+
+        table tr:first-child th:last-child {
+          border-top-right-radius: 10px;
+        }
+
+        table tr:last-child td:first-child {
+          border-bottom-left-radius: 10px;
+        }
+
+        table tr:last-child td:last-child {
+          border-bottom-right-radius: 10px;
+        }
+        
+        .header333{
+
+          font-size: 12px;
+          text-align: center;
+        }
+
+        footer {
+
+footer {
+           
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+
+
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+        
+        img{
+            float: left;
+            margin-top: -60px;
+        }
+
+        #texto2{
+            color: #33992D;
+        }
+
+       .icon-table {
+      border-collapse: collapse;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+      overflow: hidden;
+      margin: 40px auto;
+    }
+
+    .icon-table td {
+      border: 1px solid #2e8b57;
+      padding: 40px;
+      text-align: center;
+      color: #a8e6a1;
+      font-size: 24px;
+      background-color: #ffffff; /* Fijamos el fondo para evitar cualquier cambio */
+    }
+
+    .icon-table img {
+      
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: auto;
+  border-radius: 50%; /* redonda si quieres*/
+
+    }
+
+    .icon-table .waves {
+      font-size: 20px;
+      line-height: 1.2;
+      color:#000000;
+    }
+
+/*css*/
+ /* Contenedor principal del banner */
+    .banner {
+      position: sticky;
+      top: 0;
+       z-index: 1000;
+      height: 30px;
+      /* Fondo con nueva imagen */
+      background: url('https://www.salvalaselva.org/photos/article/scope/xxxl/jungle-morning-fog.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      
+    }
+
+    /* Sección izquierda que contiene el logo y el texto ECOTECH */
+    .logo-section {
+        
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilo del contenedor circular del logo */
+    .logo {
+        
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+   
+
+    /* Texto ECOTECH junto al logo */
+    .logo-text {
+       
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    /* Eslogan del lado derecho del banner */
+    .slogan {
+       
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 500px;
+      text-shadow: 9px 2px 4px rgba(0,0,0,0.4);
+    }
+    .logo {
+          width: 103px;       
+          height: 103px;     
+          border-radius: 30%;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+<div class="banner" >
+    <!-- Sección izquierda con logo y texto ECOTECH -->
+    <div class="logo-section">
+      <div class="logo">
+        <!-- Logo como imagen -->
+        <img src="lll.png" alt="Logo ECOTECH" width="130px" height="130px" style="margin-top: -4px;">
+      </div>
+      <div class="logo-text">ECOTECH</div>
+    </div>
+
+    <!-- Texto del eslogan en el lado derecho -->
+
+
+    <div class="slogan">
+      Innovaciones para un Mundo Sostenible
+    </div>
+  </div> 
+
+    <header class="header333">
+        
+        <h1>"Explora Cómo La Tecnología Está Transformando El Cuidado Del Medio Ambiente" </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.paginawe222222.html">Cuidemos nuestro planeta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inventos ecologicos2.html">Inventos Ecológicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aplicaciones">Aplicaciones  Sostenibles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="desafios ambientales2.html">Desafíos  Ambientales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ecotech2.html">Calculadora de Huella</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <br>
+    <p align="center" style="font-size: 28px; color: #4CAF50;" >
+        Inventos Ecológicos
+    </p>
+
+    <table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td><strong>Energía renovable</strong></td>
+    <td>Paneles solares, turbinas eólicas y generadores hidroeléctricos que aprovechan fuentes de energía naturales y no contaminantes.</td>
+  </tr>
+  <tr>
+    <td><strong>Vehículos eléctricos</strong></td>
+    <td>Autos y bicicletas que funcionan con electricidad en lugar de combustibles fósiles, lo que reduce las emisiones de gases contaminantes.</td>
+  </tr>
+  <tr>
+    <td><strong>Bioplásticos</strong></td>
+    <td>Plásticos hechos de materiales orgánicos, que se descomponen más fácilmente en el medio ambiente en comparación con los plásticos convencionales.</td>
+  </tr>
+  <tr>
+    <td><strong>Sistemas de reciclaje avanzados</strong></td>
+    <td>Maquinarias y procesos que mejoran la eficiencia del reciclaje, ayudando a reducir la cantidad de residuos y promover el uso de materiales reciclados.</td>
+  </tr>
+  <tr>
+    <td><strong>Construcción ecológica</strong></td>
+    <td>Edificaciones que utilizan materiales reciclados, eficientes en energía y de bajo impacto ambiental, como las casas pasivas o los edificios con techos verdes.</td>
+  </tr>
+  <tr>
+    <td><strong>Tecnologías de purificación de agua</strong></td>
+    <td>Dispositivos que aprovechan métodos naturales o innovadores para limpiar el agua, como filtros solares o sistemas de desalinización sostenibles.</td>
+</tr>
+    </table>
+
+     <p align="center" style="font-size: 28px;" id="texto2">
+        Personajes Importantes 
+    </p>
+
+    <table class="icon-table">
+  <tr>
+    <td>
+      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mzLVtxEpkjnq-4l2EHboSTP5fgoIKkFY1LEuOLJwdI869o=s900-c-k-c0x00ffffff-no-rj" alt="No se logra apreciar la imagen">
+      <div class="waves">Desarrolló un bioplástico hecho con cáscaras de plátano como alternativa ecológica al plástico tradicional. Gracias a este prayecto, se destacó como una promesa de la ciencia y la innovación ambiental.
+</div>
+      <div class="waves" style="color: blue;">Elif Bilgin
+</div>
+    </td>
+    <td>
+      <img src="https://www.fpdgi.org/wp-content/uploads/2020/06/boyan-slat.jpg" alt="No se logra apreciar la imagen">
+      <div class="waves">Fundó The Ocean Cleanup a los 18 años para limpiar el plástico de los océanos y ríos utilizando tecnologías innovadoras como barreras flotantes. Su objetivo es eliminar el 90% del plástico flotante.
+</div>
+      <div class="waves" style="color: blue;">Boyan Slat</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://pbs.twimg.com/profile_images/1708779659804958720/RLCHOHbo_400x400.jpg" alt="No se logra apreciar la imagen">
+      <div class="waves">Creó ladrillos resistentes hechos con plástico reciclado. Fundó Gjenge Makers para combatir la contaminación y construir de forma sostenible. Su trabajo ha sido reconocido a nivel mundial.
+</div>
+      <div class="waves" style="color: blue;">Nzambi Matee</div>
+    </td>
+    <td>
+      <img src="https://i0.wp.com/learnenglishwithafrica.com/wp-content/uploads/2021/08/William-Kamkwamba_Image-from-The-Resource-Alliance.Org_.jpg?resize=563%2C563&ssl=1" alt="No se logra apreciar la imagen">
+      <div class="waves">Construyó un molino de viento con materiales reciclados para generar electricidad en su aldea. Su innovación ayudo a proveer agua y energía en una zona afectada por la sequia</div>
+      <div class="waves" style="color: blue;">William Kamkwamba</div>
+    </td>
+    </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 EcoTech - Innovaciones para un Mundo Sostenible</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

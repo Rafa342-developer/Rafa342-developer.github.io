@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech: Innovaciones para un Mundo Sostenible</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            
+        }
+
+        header {
+             background-color: #297729;
+      color: white;
+    size-adjust: 600px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+            }
+
+            
+        header h1 {
+            font-size: 23px;
+            margin-bottom: 10px;
+             align-items: center;
+        }
+
+        header p {
+            font-size: 2rem;
+      margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 17px;
+            font-size: 16px;
+        }
+
+        .container {
+            margin-top: 2px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        footer {
+           
+    bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="number"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+        }
+        img{
+            float: left;
+            margin-top: -60px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #333;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .fadeIn {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+      /* Contenedor principal del banner */
+    .banner {
+      position: sticky;
+      top: 0;
+       z-index: 1000;
+      height: 30px;
+      /* Fondo con nueva imagen */
+      background: url('https://www.salvalaselva.org/photos/article/scope/xxxl/jungle-morning-fog.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      
+    }
+    .header333{
+
+font-size: 12px;
+text-align: center;
+}
+
+    /* Sección izquierda que contiene el logo y el texto ECOTECH */
+    .logo-section {
+        
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilo del contenedor circular del logo */
+    .logo {
+        
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+          width: 103px;       
+          height: 103px;     
+          border-radius: 30%;
+        }
+
+    /* Texto ECOTECH junto al logo */
+    .logo-text {
+       
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    /* Eslogan del lado derecho del banner */
+    .slogan {
+       
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 500px;
+      text-shadow: 9px 2px 4px rgba(0,0,0,0.4);
+    }
+    .logo {
+          width: 103px;       
+          height: 103px;     
+          border-radius: 30%;   
+        }
+    </style>
+</head>
+
+<body>
+
+     
+<div class="banner">
+    <div  class="logo-section">
+      <div class="logo">
+        <img src="lll.png" alt="Logo ECOTECH" width="130px" height="130px" style="margin-top: -4px;">
+    </div>
+    <div class="logo-text">ECOTECH</div>
+  </div>
+    <div class="slogan">Innovaciones para un Mundo Sostenible</div>
+  </div>
+
+  <header class="header333">
+    <h1>"Explora Cómo La Tecnología Está Transformando El Cuidado Del Medio Ambiente."</h1>
+</header>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.paginawe222222.html">Cuidemos nuestro planeta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inventos ecologicos2.html">Inventos Ecológicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aplicaciones sostenibles2.html">Aplicaciones Sostenibles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="desafios ambientales2.html">Desafíos Ambientales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ecotech2.html">Calculadora de Huella</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br>
+
+    <div class="container fadeIn">
+
+       
+        <section id="calculadora">
+            <h2>Calculadora De Huella De Carbono</h2>
+            <p>Ingresa Tus Datos Para Calcular Tu Huella De Carbono Estimada:</p>
+            <div class="form-container">
+                <form id="carbonFootprintForm">
+                    <label for="electricity">Consumo de electricidad (kWh por mes):</label>
+                    <input type="number" id="electricity" required>
+
+                    <label for="gasoline">Consumo de gasolina (litros por mes):</label>
+                    <input type="number" id="gasoline" required>
+
+                    <label for="propane">Consumo de gas propano (kg por mes):</label>
+                    <input type="number" id="propane" required>
+
+                    <input type="submit" value="Calcular Huella de Carbono">
+                </form>
+
+                <div class="result" id="result"></div>
+            </div>
+
+            <script>
+                document.getElementById('carbonFootprintForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    const electricity = parseFloat(document.getElementById('electricity').value);
+                    const gasoline = parseFloat(document.getElementById('gasoline').value);
+                    const propane = parseFloat(document.getElementById('propane').value);
+
+                    const electricityFactor = 0.233;
+                    const gasolineFactor = 2.31;
+                    const propaneFactor = 1.55;
+
+                    const electricityCO2 = electricity * electricityFactor;
+                    const gasolineCO2 = gasoline * gasolineFactor;
+                    const propaneCO2 = propane * propaneFactor;
+
+                    const totalCO2 = electricityCO2 + gasolineCO2 + propaneCO2;
+
+                    document.getElementById('result').textContent = `Tu huella de carbono estimada es ${totalCO2.toFixed(2)} kg CO2 por mes.`;
+                });
+            </script>
+        </section>
+
+    </div>
+
+    <footer >
+        <p>&copy; 2025 EcoTech - Innovaciones para un Mundo Sostenible</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>
